@@ -1,0 +1,44 @@
+/*
+ * GalleryRoom.js theme — dark-room
+ * A pitch-black screening room: works glow, captions sit on dark plates.
+ */
+
+.gr-theme-dark-room {
+  background: #050505;
+  color: #f4f4f4;
+}
+
+.gr-theme-dark-room .gr-frame {
+  background: #111;
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.18);
+}
+
+.gr-theme-dark-room .gr-caption {
+  background: #161616;
+  color: #cfcfcf;
+  padding: 14px 18px;
+  border-radius: 4px;
+}
+
+.gr-theme-dark-room .gr-caption h2 {
+  color: #fff;
+}
+
+.gr-theme-dark-room .gr-map {
+  background: rgba(5, 5, 5, 0.6);
+}
+
+.gr-theme-dark-room .gr-text-work {
+  background: #101010;
+  color: #e8e8e8;
+}
+
+.gr-theme-dark-room .gr-modal-content {
+  background: #101010;
+  color: #f4f4f4;
+}
+
+.gr-theme-dark-room .gr-modal-close {
+  background: #f4f4f4;
+  color: #050505;
+}

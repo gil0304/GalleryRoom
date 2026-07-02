@@ -1,0 +1,36 @@
+/*
+ * GalleryRoom.js theme — portfolio-clean
+ * A minimal portfolio look: white, readable, description-first.
+ */
+
+.gr-theme-portfolio-clean {
+  background: #ffffff;
+  color: #151515;
+}
+
+.gr-theme-portfolio-clean .gr-work {
+  max-width: 560px;
+}
+
+.gr-theme-portfolio-clean .gr-frame {
+  background: #f4f4f4;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.gr-theme-portfolio-clean .gr-caption {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.gr-theme-portfolio-clean .gr-caption h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.gr-theme-portfolio-clean .gr-description {
+  color: #444;
+}
+
+.gr-theme-portfolio-clean .gr-map {
+  background: rgba(255, 255, 255, 0.75);
+}

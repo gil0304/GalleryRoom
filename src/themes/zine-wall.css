@@ -1,0 +1,59 @@
+/*
+ * GalleryRoom.js theme — zine-wall
+ * A handmade wall: paper-toned background, slightly tilted works,
+ * strips of translucent tape on the corners.
+ */
+
+.gr-theme-zine-wall {
+  background: #eee7d8;
+  color: #1c1c1c;
+}
+
+.gr-theme-zine-wall .gr-frame {
+  background: #fffdf6;
+  padding: 14px;
+  box-shadow: 0 10px 24px rgba(60, 45, 20, 0.22);
+}
+
+.gr-theme-zine-wall .gr-work:nth-child(odd) .gr-frame {
+  rotate: -1.4deg;
+}
+
+.gr-theme-zine-wall .gr-work:nth-child(even) .gr-frame {
+  rotate: 1.2deg;
+}
+
+.gr-theme-zine-wall .gr-frame::before,
+.gr-theme-zine-wall .gr-frame::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.gr-theme-zine-wall .gr-frame::before {
+  top: -7px;
+  left: 18px;
+  rotate: -12deg;
+}
+
+.gr-theme-zine-wall .gr-frame::after {
+  top: -7px;
+  right: 18px;
+  rotate: 10deg;
+}
+
+.gr-theme-zine-wall .gr-caption {
+  font-family: "Hiragino Maru Gothic ProN", "Comic Sans MS", system-ui, sans-serif;
+}
+
+.gr-theme-zine-wall .gr-map {
+  background: rgba(238, 231, 216, 0.75);
+}
+
+.gr-theme-zine-wall .gr-text-work {
+  background: #fffdf6;
+}

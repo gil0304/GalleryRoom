@@ -1,0 +1,47 @@
+/*
+ * GalleryRoom.js theme — museum
+ * A classic gallery: warm wall color, heavy wooden frames,
+ * plate-style captions.
+ */
+
+.gr-theme-museum {
+  background: #e9e1d0;
+  color: #211b14;
+}
+
+.gr-theme-museum .gr-frame {
+  border: 12px solid #4a3828;
+  outline: 2px solid #2e2118;
+  background: #fdfaf2;
+  padding: 16px;
+  box-shadow:
+    0 24px 48px rgba(46, 33, 24, 0.35),
+    inset 0 0 0 2px #6b543c;
+}
+
+.gr-theme-museum .gr-caption {
+  background: #f7f1e3;
+  border: 1px solid #c9bda4;
+  padding: 12px 18px;
+  max-width: 340px;
+  font-family: Georgia, "Times New Roman", serif;
+  box-shadow: 0 4px 12px rgba(46, 33, 24, 0.18);
+}
+
+.gr-theme-museum .gr-caption h2 {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.gr-theme-museum .gr-room-title {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.gr-theme-museum .gr-map {
+  background: rgba(233, 225, 208, 0.8);
+}
+
+.gr-theme-museum .gr-text-work {
+  background: #fdfaf2;
+  font-family: Georgia, "Times New Roman", serif;
+}
