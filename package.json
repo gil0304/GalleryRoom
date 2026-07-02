@@ -1,0 +1,28 @@
+{
+  "name": "gallery-room-js",
+  "version": "1.0.0",
+  "description": "A JavaScript/CSS library for creating web exhibition galleries.",
+  "main": "dist/gallery-room.js",
+  "style": "dist/gallery-room.css",
+  "module": "dist/gallery-room.esm.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "build": "node scripts/build.js",
+    "preview": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "gallery",
+    "portfolio",
+    "exhibition",
+    "museum",
+    "javascript",
+    "css"
+  ],
+  "license": "MIT"
+}
