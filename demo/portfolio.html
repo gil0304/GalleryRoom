@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Demo — GalleryRoom.js</title>
+  <link rel="stylesheet" href="../dist/gallery-room.css">
+  <style>body { margin: 0; }</style>
+</head>
+<body>
+  <div id="gallery"></div>
+
+  <script src="../dist/gallery-room.js"></script>
+  <script>
+    GalleryRoom.create("#gallery", {
+      title: "Ryogo Portfolio",
+      subtitle: "Selected Works 2024–2026",
+      theme: "white-cube",
+      layout: "horizontal",
+      enableMap: true,
+      enableFilter: true,
+      enableDepth: true,
+      works: [
+        {
+          id: "work-01",
+          title: "Sound Map",
+          type: "image",
+          src: "../assets/sample-01.png",
+          year: "2026",
+          category: "Web",
+          caption: "位置情報と音を使ったWeb作品。歩いた場所の環境音が地図上に記録される。",
+          author: "Ryogo",
+          link: "https://example.com",
+          tags: ["Web Audio", "Geolocation"]
+        },
+        {
+          id: "work-02",
+          title: "Poster Generator",
+          type: "video",
+          src: "../assets/sample-03.mp4",
+          year: "2026",
+          category: "App",
+          caption: "カレンダーの予定から自動でポスターを生成するアプリのデモ映像。",
+          author: "Ryogo",
+          tags: ["Generative"]
+        },
+        {
+          id: "work-03",
+          title: "Motion Reel 2025",
+          type: "youtube",
+          src: "https://www.youtube.com/embed/M7lc1UVf-VE",
+          year: "2025",
+          category: "Motion",
+          caption: "2025年の映像作品をまとめたデモリール。",
+          author: "Ryogo"
+        },
+        {
+          id: "work-04",
+          title: "Color Study",
+          type: "image",
+          src: "../assets/sample-02.png",
+          year: "2025",
+          category: "Design",
+          caption: "色彩構成のスタディシリーズ。",
+          author: "Ryogo"
+        },
+        {
+          id: "work-05",
+          title: "Vertical Poster",
+          type: "image",
+          src: "../assets/sample-04.png",
+          year: "2024",
+          category: "Design",
+          caption: "縦構図のポスターデザイン。",
+          author: "Ryogo"
+        },
+        {
+          id: "work-06",
+          title: "Tiny Web Toy",
+          type: "iframe",
+          src: "https://example.com",
+          year: "2024",
+          category: "Web",
+          caption: "ブラウザで遊べる小さなWebトイ。",
+          author: "Ryogo"
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

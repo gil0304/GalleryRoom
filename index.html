@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GalleryRoom.js — Web Exhibition Library</title>
+  <link rel="stylesheet" href="dist/gallery-room.css">
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    .demo-nav {
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+      padding: 16px 56px; background: #111; color: #fff; font-size: 14px;
+    }
+    .demo-nav strong { margin-right: 8px; letter-spacing: 0.06em; }
+    .demo-nav a { color: #fff; opacity: 0.8; text-decoration: none; }
+    .demo-nav a:hover { opacity: 1; text-decoration: underline; }
+    @media (max-width: 768px) { .demo-nav { padding: 12px 20px; } }
+  </style>
+</head>
+<body>
+  <nav class="demo-nav">
+    <strong>GalleryRoom.js Demos</strong>
+    <a href="demo/portfolio.html">Portfolio</a>
+    <a href="demo/photo.html">Photo</a>
+    <a href="demo/movie.html">Movie</a>
+    <a href="demo/school.html">School</a>
+    <a href="demo/walkthrough.html">Walkthrough</a>
+  </nav>
+
+  <div id="gallery"></div>
+
+  <script src="dist/gallery-room.js"></script>
+  <script>
+    GalleryRoom.create("#gallery", {
+      title: "My Works Exhibition",
+      subtitle: "Web Exhibition Library",
+      theme: "white-cube",
+      layout: "horizontal",
+      enableMap: true,
+      enableFilter: true,
+      enableDepth: true,
+      works: [
+        {
+          id: "work-01",
+          title: "Sound Map",
+          type: "image",
+          src: "assets/sample-01.png",
+          year: "2026",
+          category: "Web",
+          caption: "位置情報と音を使ったWeb作品",
+          author: "Ryogo",
+          link: "https://example.com"
+        },
+        {
+          id: "work-02",
+          title: "Poster Generator",
+          type: "video",
+          src: "assets/sample-03.mp4",
+          year: "2026",
+          category: "App",
+          caption: "予定からポスターを生成する作品",
+          author: "Ryogo"
+        },
+        {
+          id: "work-03",
+          title: "Color Study",
+          type: "image",
+          src: "assets/sample-02.png",
+          year: "2025",
+          category: "Design",
+          caption: "色彩構成のスタディ",
+          author: "Ryogo",
+          tags: ["color", "study"]
+        },
+        {
+          id: "work-04",
+          title: "Statement",
+          type: "text",
+          content: "作品をただ一覧表示するのではなく、\nWeb上の展示室として見せることを目的にした\nJavaScript/CSSライブラリ。",
+          year: "2026",
+          category: "Text",
+          author: "Ryogo"
+        },
+        {
+          id: "work-05",
+          title: "Vertical Piece",
+          type: "image",
+          src: "assets/sample-04.png",
+          year: "2025",
+          category: "Design",
+          caption: "縦構図の作品サンプル",
+          author: "Ryogo"
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

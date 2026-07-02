@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Exhibition Demo — GalleryRoom.js</title>
+  <link rel="stylesheet" href="../dist/gallery-room.css">
+  <style>body { margin: 0; }</style>
+</head>
+<body>
+  <div id="gallery"></div>
+
+  <script src="../dist/gallery-room.js"></script>
+  <script>
+    GalleryRoom.create("#gallery", {
+      title: "情報デザイン科 卒業制作展",
+      subtitle: "2026年度 学生作品展示",
+      theme: "school-exhibition",
+      layout: "horizontal",
+      enableMap: true,
+      enableFilter: true,
+      enableDepth: true,
+      works: [
+        {
+          id: "school-01",
+          title: "Sound Map",
+          type: "image",
+          src: "../assets/sample-01.png",
+          year: "2026",
+          category: "Web",
+          caption: "位置情報と音を使ったWeb作品。会場ではヘッドホンで体験できます。",
+          author: "山田 亮吾",
+          qr: "../assets/sample-06.png",
+          tags: ["卒業制作", "優秀賞"]
+        },
+        {
+          id: "school-02",
+          title: "ポスター自動生成",
+          type: "video",
+          src: "../assets/sample-03.mp4",
+          year: "2026",
+          category: "App",
+          caption: "予定を入力するとポスターが自動生成されるアプリ。",
+          author: "佐藤 花",
+          qr: "../assets/sample-06.png"
+        },
+        {
+          id: "school-03",
+          title: "色のスケッチ",
+          type: "image",
+          src: "../assets/sample-02.png",
+          year: "2026",
+          category: "Design",
+          caption: "日常の色を採集して構成したグラフィック。",
+          author: "鈴木 一郎"
+        },
+        {
+          id: "school-04",
+          title: "artist statement",
+          type: "text",
+          content: "私たちは「見ること」をテーマに、\n1年間かけて制作を行いました。\n会場でぜひ実物をご覧ください。",
+          year: "2026",
+          category: "Text",
+          author: "情報デザイン科一同"
+        },
+        {
+          id: "school-05",
+          title: "緑の窓",
+          type: "image",
+          src: "../assets/sample-04.png",
+          year: "2026",
+          category: "Design",
+          caption: "教室の窓から見える緑を再構成した作品。",
+          author: "田中 みどり",
+          qr: "../assets/sample-06.png"
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

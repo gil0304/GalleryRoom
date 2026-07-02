@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Exhibition Demo — GalleryRoom.js</title>
+  <link rel="stylesheet" href="../dist/gallery-room.css">
+  <style>body { margin: 0; background: #050505; }</style>
+</head>
+<body>
+  <div id="gallery"></div>
+
+  <script src="../dist/gallery-room.js"></script>
+  <script>
+    GalleryRoom.create("#gallery", {
+      title: "Dark Screening",
+      subtitle: "Video Works Exhibition",
+      theme: "dark-room",
+      layout: "horizontal",
+      enableMap: true,
+      enableFilter: true,
+      enableDepth: true,
+      works: [
+        {
+          id: "movie-01",
+          title: "Test Pattern Study",
+          type: "video",
+          src: "../assets/sample-03.mp4",
+          year: "2026",
+          category: "mp4",
+          caption: "映像信号をモチーフにした実験映像。",
+          author: "Ryogo"
+        },
+        {
+          id: "movie-02",
+          title: "Motion Reel",
+          type: "youtube",
+          src: "https://www.youtube.com/embed/M7lc1UVf-VE",
+          year: "2025",
+          category: "YouTube",
+          caption: "YouTubeで公開している映像作品のリール。",
+          author: "Ryogo"
+        },
+        {
+          id: "movie-03",
+          title: "Interactive Screen",
+          type: "iframe",
+          src: "https://example.com",
+          year: "2025",
+          category: "Interactive",
+          caption: "ブラウザ上で動くインタラクティブ映像。",
+          author: "Ryogo"
+        },
+        {
+          id: "movie-04",
+          title: "Loop #2",
+          type: "video",
+          src: "../assets/sample-03.mp4",
+          year: "2024",
+          category: "mp4",
+          caption: "ループ再生を前提とした短編映像。",
+          author: "Ryogo"
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

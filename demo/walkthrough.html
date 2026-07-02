@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walkthrough Demo — GalleryRoom.js</title>
+  <link rel="stylesheet" href="../dist/gallery-room.css">
+  <style>body { margin: 0; }</style>
+</head>
+<body>
+  <div id="gallery"></div>
+
+  <script src="../dist/gallery-room.js"></script>
+  <script>
+    GalleryRoom.create("#gallery", {
+      title: "Walkthrough Gallery",
+      subtitle: "CSS transform による擬似3D展示",
+      theme: "white-cube",
+      layout: "walkthrough",
+      enableMap: true,
+      enableFilter: false,
+      enableDepth: true,
+      works: [
+        {
+          id: "walk-01",
+          title: "Entrance",
+          type: "image",
+          src: "../assets/sample-01.png",
+          year: "2026",
+          caption: "展示室の入口に飾られた一枚。",
+          author: "Ryogo"
+        },
+        {
+          id: "walk-02",
+          title: "Left Wall",
+          type: "image",
+          src: "../assets/sample-02.png",
+          year: "2026",
+          caption: "左の壁に掛けられた作品。",
+          author: "Ryogo"
+        },
+        {
+          id: "walk-03",
+          title: "Right Wall",
+          type: "image",
+          src: "../assets/sample-05.png",
+          year: "2025",
+          caption: "右の壁に掛けられた作品。",
+          author: "Ryogo"
+        },
+        {
+          id: "walk-04",
+          title: "Alcove",
+          type: "image",
+          src: "../assets/sample-04.png",
+          year: "2025",
+          caption: "小部屋の奥に飾られた縦長の作品。",
+          author: "Ryogo",
+          depth: 80,
+          rotate: -6,
+          height: -10
+        },
+        {
+          id: "walk-05",
+          title: "Exit Piece",
+          type: "image",
+          src: "../assets/sample-07.png",
+          year: "2024",
+          caption: "出口の前に置かれた最後の作品。",
+          author: "Ryogo"
+        }
+      ]
+    });
+  </script>
+</body>
+</html>
