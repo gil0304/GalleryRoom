@@ -8,6 +8,6 @@ Webの作品一覧は便利なカードグリッドになりがちですが、�
 
 ## 公開メモ
 
+- 公開URL: https://gallery-room.lolipop-now.app
 - 種別: 依存なしの静的HTML / JavaScriptライブラリ
 - トップページに実動デモがあります
-
